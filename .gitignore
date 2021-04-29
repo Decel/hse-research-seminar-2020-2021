@@ -1,0 +1,6 @@
+~$*.xlsx
+report/*.bcf
+report/*.xml
+report/main.synctex.gz
+report/*bcf
+.idea

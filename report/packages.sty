@@ -1,0 +1,64 @@
+\ProvidesPackage{packages}
+
+% Языковые пакеты и различные кодировки
+\RequirePackage[T2A]{fontenc}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[english, russian]{babel}
+\RequirePackage{hyphenat}
+\RequirePackage{datetime}
+
+% Базовые математические пакеты
+\RequirePackage{mathtools}
+\RequirePackage{amsfonts}
+\RequirePackage{amssymb}
+\RequirePackage{amsthm}    % Теоремки
+\RequirePackage{cases}     % Нормальная работа с системами уравнений
+\RequirePackage{physics}   % Разного рода операторы дифференциального исчисления
+\RequirePackage{centernot}
+
+% Ссылки мои ссылки
+\RequirePackage[unicode=true, colorlinks=true, linkcolor=black, urlcolor=blue, pdfencoding=auto, psdextra]{hyperref}
+
+% Показывать номера только у уравнений, на которые есть ссылки
+\mathtoolsset{showonlyrefs=true}
+
+% Внешний вид файла
+\RequirePackage[a4paper, left=2.5cm, right=1cm, top=2cm, bottom=2cm]{geometry}
+\RequirePackage{fancyhdr}
+\RequirePackage{multicol}
+
+% Различные пакеты для набора текста и формул
+\RequirePackage{csquotes}  % Нормальные кавычки
+\RequirePackage{cancel}    % Зачеркивание любых символов
+\RequirePackage{graphicx}  % Люблю графики и все что с ними связано
+\RequirePackage{enumitem}  % Более гибкие enumerate/itemize/description
+
+% figures и subfigures для графиков
+\RequirePackage{float}
+\RequirePackage{caption}
+\RequirePackage{subcaption}
+
+% Стиль секций и заголовков
+\RequirePackage[center, medium]{titlesec}
+
+% Библиография
+\bibliographystyle{gost-numeric.bbx}
+\RequirePackage[parentracker=true,
+backend=biber,
+hyperref=false,
+bibencoding=utf8,
+style=numeric-comp,
+language=auto,
+autolang=other,
+citestyle=gost-numeric,
+defernumbers=true,
+bibstyle=gost-numeric,
+sorting=nty
+]{biblatex}
+
+\makeatletter
+\def\convertto#1#2{\strip@pt\dimexpr #2*65536/\number\dimexpr 1#1}
+\makeatother
+
+\RequirePackage{tikz}
+\RequirePackage{tabularx}

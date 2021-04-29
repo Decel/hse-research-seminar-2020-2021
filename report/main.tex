@@ -1,0 +1,26 @@
+\documentclass[a4paper, 12pt]{extarticle}
+
+\usepackage{packages}
+\usepackage{environments}
+% \usepackage{commands}
+% \usepackage{appearence}
+\renewcommand{\baselinestretch}{1.5}
+\addbibresource{library.bib}
+\setlength{\parindent}{1.25em}
+
+\usepackage{tocloft}
+
+\begin{document}
+
+    \include{include/titlepage}
+    
+    \setcounter{page}{2}
+    \tableofcontents
+    
+    \include{include/definitions}
+    \include{include/introduction}
+    \include{include/main-part}
+    \printbibliography
+    \include{include/appendix}
+
+\end{document}
