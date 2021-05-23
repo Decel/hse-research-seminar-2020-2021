@@ -17,10 +17,13 @@
     \setcounter{page}{2}
     \tableofcontents
     
-    \include{include/control-point-1/definitions.tex}
-    \include{include/control-point-2/introduction.tex}
-    \include{include/control-point-2/main-part.tex}
-    \printbibliography
-    \include{include/appendix.tex}
+    % \include{include/control-point-3/abstract.tex}            % Реферат (краткий обзор исследования, -- зачем, почему, как и что вышло)
+    \include{include/control-point-1/definitions.tex}           % Стоит добавить больше определений
+    \include{include/control-point-2/introduction.tex}          % Надо описать первый и третий этапы работы, возможно перенести начало теоретической части, я думаю допишу
+    \include{include/control-point-3/theoretical-part.tex}      % Теоретическая часть, не успел пока полностью описать UMAP с примерами, если будет прикол про определение школ, то тоже                                                                   надо будет описать способ здесь
+    \include{include/control-point-2/main-part.tex}             % Вроде бы всё хорошо, это подходит под "Описание вычислительного эксперимента" почти идеально.
+    % \include{include/control-point-3/conclusions.tex}         % "Заключение. Основные результаты и выводы. Перспективы дальнейших исследований по теме."
+    \printbibliography                                          % Надо объединить литературу из КТ1 и КТ2, добавить ещё некоторую
+    \include{include/appendix.tex}                              % По идеи, если работа будет финальной, то здесь вместо плана работы должны быть код, возможно
 
 \end{document}
